@@ -4,15 +4,18 @@ import 'semantic-ui-css/semantic.min.css';
 import { Image } from 'semantic-ui-react'
 
 
-function FollowersCards(props) {
+class FollowersCards extends React.Component {
+    render(){
     return (
         <Card>
-            <Card.Content header={props.followers.login} />
+            <Card.Content header={this.props.followers.login} />
            
-            <Image src={props.followers.avatar_url} wrapped ui={false} />
+            <Image src={this.props.followers.avatar_url} wrapped ui={false} />
 
         </Card>
     )
 }
+}
 
 export default FollowersCards;
+
