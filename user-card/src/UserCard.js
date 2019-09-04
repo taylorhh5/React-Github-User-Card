@@ -9,9 +9,11 @@ function Cards (props){
         <Card>
             
             <h1>User: {props.user.login}</h1>
+            
             <Card.Content header={props.user.name} />
            <h2>Location: {props.user.location}</h2>
-            <img  src={props.user.avatar_url} />
+           
+            <Image src={props.user.avatar_url} wrapped ui={false} />
             <h2> Number of followers: {props.user.followers}</h2>
             <div>Followers: {props.followers.map(follower=>(
 <div> {follower.login}</div>

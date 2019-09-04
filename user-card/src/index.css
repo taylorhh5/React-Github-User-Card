@@ -13,12 +13,29 @@ code {
     monospace;
 }
 
-
+.body{
+  background: lightblue;
+}
 .ui.card{
-  margin-top: 1rem !important;
-  margin-left: 35% !important;
-  background: #e5e5e5 !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  margin-left: 38% !important;
+  background: khaki !important;
   box-shadow: 5px 1px 20px #111 !important;
+  border: 5px solid black !important;
+}
+
+.User :hover {
+  animation: shake 3.0s;
+  
+  }
+ .Followers :hover {
+  animation: shake 3.0s ; 
+  }
  
   
+
+h1{
+  text-align: center;
+  color: rgb(77, 77, 73);
 }
