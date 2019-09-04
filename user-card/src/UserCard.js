@@ -14,7 +14,7 @@ function Cards (props){
            <h2>Location: {props.user.location}</h2>
            
             <Image src={props.user.avatar_url} wrapped ui={false} />
-            <h2> Number of followers: {props.user.followers}</h2>
+            <h4> Number of followers: {props.user.followers}</h4>
             <div>Followers: {props.followers.map(follower=>(
 <div> {follower.login}</div>
             ))}</div>
